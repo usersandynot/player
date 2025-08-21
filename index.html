@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Playlist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="player-container">
+    <h1>🎵 My Playlist</h1>
+
+    <!-- Song Info -->
+    <div class="song-info">
+      <h2 id="song-title">Select a song</h2>
+    </div>
+
+    <!-- Audio Controls -->
+    <audio id="audio"></audio>
+
+    <div class="controls">
+      <button id="prev">⏮</button>
+      <button id="play">▶️</button>
+      <button id="next">⏭</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <input type="range" id="progress" value="0">
+
+    <!-- Playlist (Add your songs here) -->
+    <ul id="playlist">
+      <li data-src="songs/song1.mp3">sahiba</li>
+      <li data-src="songs/song2.mp3">chaleya</li>
+      <li data-src="songs/song3.mp3">heeriye</li>
+      <!-- 👇 Add your songs like this -->
+      <!-- <li data-src="songs/mysong.mp3">Song 4 - Custom Name</li> -->
+    </ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
